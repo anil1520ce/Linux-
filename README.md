@@ -1,8 +1,8 @@
-                                                    Linux Assignment
+                                                  #  Linux Assignment
 
 # File Managment:
 
-https://www.google.com/search?q=linux+imaes&sxsrf=AJOqlzUzMtZmzp8fkWVSWx6qRIWBog11iA%3A1677755949842&source=hp&ei=LYYAZMvhMKCn2roPoLi1yAs&iflsig=AK50M_UAAAAAZACUPZjkOcjBVVvOKRdtaduRM71pWMMY&ved=0ahUKEwiLrKH7j739AhWgk1YBHSBcDbkQ4dUDCAc&uact=5&oq=linux+imaes&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEA0QgAQyBwgAEA0QgAQyBwgAEA0QgAQyBwgAEA0QgAQyBwgAEA0QgAQyBwgAEA0QgAQyBwgAEA0QgAQyBwgAEA0QgAQyBwgAEA0QgAQyBwgAEA0QgAQ6BAgjECc6BQgAEJECOgUILhCABDoICAAQsQMQgwE6EQguEIAEELEDEIMBEMcBENEDOggIABCABBCxAzoLCAAQgAQQsQMQgwE6CAguELEDEJECOhEILhCDARDHARCxAxDRAxCABDoFCAAQgAQ6CwgAELEDEIMBEJECOhEILhCxAxCDARDHARDRAxCRAjoQCAAQgAQQFBCHAhCxAxCDAToKCAAQsQMQgwEQCjoICC4QgAQQsQM6DggAEIAEELEDEIMBEMkDOg0IABCABBAUEIcCELEDOgoIABCABBAUEIcCUABYlyFguS1oAHAAeACAAfEBiAGbCpIBBTEuOS4xmAEAoAEB&sclient=gws-wiz#imgrc=sr2BIvvRmThQdM
+
 
 #### Codes
 
@@ -32,6 +32,8 @@ https://www.google.com/search?q=linux+imaes&sxsrf=AJOqlzUzMtZmzp8fkWVSWx6qRIWBog
    - (/word)  – This command is used to search a specific word in Vim editor.
    - (:%s/oldword/newword/g) – This is used to change the old word to new word.
 
+
+# commands
    - cp      - This command used to copying the files from one location to another.
    - cp -r  - This command used to copy a directory along with its sub directories.
    - sed    - This command used to edit files quickly and efficiently.
@@ -49,8 +51,39 @@ https://www.google.com/search?q=linux+imaes&sxsrf=AJOqlzUzMtZmzp8fkWVSWx6qRIWBog
    - unzip - It is used to decompress or extract the content from the the compressive archive.
 
 
+# User Management
+   - useradd - This command is used for creating a new user .
+   - userdel - This command is used for deleting a specific user.
+   - Passwd  - This command is used for generating a password for a specific user.
 
+# Access Managment
+  - ssh  - It is a tool used to establish a secure shell connection to a remote server.
+  - scp  - It is a command used in linux is used to securely transfer files between local and remote hosts over a network.
+  - sudo - It is a command used to allows a user to run commands and programs with the privileges of another user.
+  - su   - It is a command used to allows a user to switch to another user account or become the superuser or root user.
+  - chmod- This command is used to change the permissions of files or directories.
+  - chown- This command is used to change the owner and group of files or directories.
 
+# Configuration Managment
+  - env        - It is used to display or modify the environment variables. 
+  - PATH       - It is an Environment variables that contains a list of directories sepparated by colons ':'.
+  - echo       - It is used to display text on the terminal. It takes a string as an arugument and outputs it to the screen.
+  - export     - This Command is used to set environment variables.
+  - hostname   - This Command is used to get or set hostname of the system. 
+  - netstat    - This Command is used to display information about the network connections and network statistics of the system.
+  - corntab -e - This Command that allows to edit the crontab file.(allowing you to add,modify or delete cronjobs as needed at specific                        times).
+  - corntab -l - This Command that allows to view the content of the crontab file.
+  - kill       - This Command is used to send a signal to a process to terminate it.
+  - pkill      - This command is used to send a signal to one or more processes based on their name or other attributes.
+  - wget       - It is a command-line utility in Linux used to download files from the Internet.It supports various protocols,including HTTP,                  HTTPS and FTP.
+  - curl       - It is a tool to transfer data from or to a server, using one of supporting protocols (IMAP,POP3 etc.,) The command is                         designed to work without user interaction. 
+  - ping       - This is a command-line utility in Linux used to test the connectivity between two hosts on a network.
+  - diff       - This is a command-line utility in Linux used to compare the contents of two files or directories and shows the difference                     between them. 
+  - uname      - It is used to print the detail information about the current system.
+  - history    - It is used to view the list of commands that have been executed in the current shell session.
+  - ps ux      - It is a command that displays a list of all processs running on the system,including their associated user and CPU/memory                     usage.
+  - ps -ef|grep<pid>     -This command is a useful tool for finding information about a specific process running on Linux system.
+  
 
 
 
