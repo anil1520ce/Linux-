@@ -403,18 +403,56 @@
   
 # Log Managment   
   - syslog     - It is a standard logging protocol used on Unix-like systems,to log various system messages and events.
+  ~~~
+  root@anil-TECRA:~/Anil# ls /var/log
+  alternatives.log  auth.log    boot.log.5     dmesg.0     faillog          hp         private            syslog.4.gz
+  apport.log        boot.log    bootstrap.log  dmesg.1.gz  fontconfig.log   installer  speech-dispatcher  syslog.5.gz
+  ~~~ 
   - journalctl - It is used to query and display system log messages stored in the systemd journal.
+  ~~~
+  root@anil-TECRA:~/Anil# journalctl -n 2
+  -- Logs begin at Thu 2022-09-08 15:28:15 IST, end at Wed 2023-03-08 19:10:34 IST. --
+  Mar 08 19:04:57 anil-TECRA systemd[1]: Finished Ubuntu Advantage Timer for running repeated jobs.
+  Mar 08 19:10:34 anil-TECRA google-chrome.desktop[3992]: [4061:4061:0308/191034.460699:ERROR:shared_image_manager.cc(197)] SharedImageManager:>
+  ~~~
   - custom log - Custom logs can help to mointor and troubleshoot our application more effectively by providing a more granular view of our                    application's behaviour and performance. 
-
+  ~~~
+  root@anil-TECRA:~/Anil# dmesg
+  [    0.000000] microcode: microcode updated early to revision 0x2f, date = 2019-02-17 
+  [    0.000000] Linux version 5.15.0-67-generic (buildd@lcy02-amd64-029) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils for Ubuntu)       2.34) #74~20.04.1-Ubuntu SMP Wed Feb 22 14:52:34 UTC 2023 (Ubuntu 5.15.0-67.74~20.04.1-generic 5.15.85)
+  ~~~
 # Network Managment
   - ifconfig  - It is a tool that is used to configure network interface in Linux and other Unix-like operating systems. 
-  - http vs https  - http is a simpler protocol that is used for basic web browsing while https is more secure protocol used for transmitting                      sensitve data.
-  - internal network vs external network  - An internal network is a private network that is isolated from the public internet and can only be                                            accessed by authorized users within the network. An external network is a public internet, which                                              is accessible to anyone with an internet connection.
-  - TCP vs UDP     - TCP is a reliable,connection-oriented protocol that is commonly used for applications that require reliable transmission                      of data. UDP is fast and connectionless protocol that is commonly used for applications that require fast trasmission of                      data.  
-  - private subnets vs public subnets - private subnet is reserved for use within an organization and is not accessible from the public                                               internet. Public subnets is accessible from the public internet and used for resources that need to be                                        accessible from outside the organization.
+  ~~~
+  root@anil-TECRA:~/Anil# ifconfig
+  enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+          ether e8:9d:87:77:89:2f  txqueuelen 1000  (Ethernet)
+  ~~~
+  - http vs https  - http is a simpler protocol that is used for basic web browsing while https is more secure protocol used for transmitting                 ~~~                sensitve data.
+  Eg:- http://www.google.com (unsecure)
+       https://www.google.com (secure).
+  ~~~
+  - internal network vs external network  - An internal network is a private network that is isolated from the public internet and can only be                                                         accessed by authorized users within the network. An external network is a public internet, which                                                           is accessible to anyone with an internet connection.
+   ~~~
+   Eg:- Internal network - Intranet
+        External network - Internet.
+   ~~~
+  - TCP vs UDP     - TCP is a reliable,connection-oriented protocol that is commonly used for applications that require reliable transmission                                    of data. UDP is fast and connectionless protocol that is commonly used for applications that require fast trasmission of                                    data.
+  ~~~
+  Eg:- TCP - Instagram & Whatsapp
+       UDP - Google Meet,Zoom.
+  ~~~
+  - private subnets vs public subnets - private subnet is reserved for use within an organization and is not accessible from the public                                                             internet. Public subnets is accessible from the public internet and used for resources that need to be                                                     accessible from outside the organization.
+  ~~~
+  Eg:- Private subnets Instance - 10.0.0.5
+       Public subnets Instance  - 198.51.100.1
+  ~~~
   - CIDR Range  - CIDR(classless Inter-Domain Routing) range is a method used to allocate and specify the IP address range for networks.
-  - Ports       - Port are logical connection points used for the network protocols to identify specific applications or  processes running on                  a computer system. Registered ports for user applications,and dynamic or private ports for client applications.
-                For Example:- Port 20 and 21 are used by FTP(File Transfer Protocol).
+  ~~~
+  Eg:- CIDR notation -192.168.0.15/24 
+  ~~~
+  - Ports       - Port are logical connection points used for the network protocols to identify specific applications or  processes running on                               a computer system. Registered ports for user applications,and dynamic or private ports for client applications.
+                  For Example:- Port 20 and 21 are used by FTP(File Transfer Protocol).
                               Port 22 is used for SSH(Secure Shell).
                               Port 23 is used for Telnet.
                               Port 25 is used for SMTP(Simple Mail Transfer Protocol)
@@ -422,15 +460,17 @@
                               Port 443 is used for HTTPS(HTTPSecure). 
 
 # Application Server
-  - An Application server is a server that provides environment for running and hosting applications.It typically provides services such asvvv    database,connectivity,transaction processing, messaging and security, and allows deploy,managed, and accessed by the user. 
-    For Example :- Apache Tomcat server, Microsoft IIS, IBM WebSphere, JBoss EAP,Oracle weblogic.
-
+  - An Application server is a server that provides environment for running and hosting applications.It typically provides services such as                     database,connectivity,transaction processing, messaging and security, and allows deploy,managed, and accessed by the user.
+  ~~~
+  Example :- Apache Tomcat server, Microsoft IIS, IBM WebSphere, JBoss EAP,Oracle weblogic.
+  ~~~
 # Web Server
-  - A Web server is a software application that run on a computer and serves we content over the internet or an intranet. Its primary function    is to receive and respond to client requests for web pages or resources, and to send the requested information back to the client.
-    For Example :- Apache HTTP server , Microsoft IIS, Nginx, lighttpd, caddy.
-
+  - A Web server is a software application that run on a computer and serves we content over the internet or an intranet. Its primary function    is to         receive and respond to client requests for web pages or resources, and to send the requested information back to the client.
+  ~~~
+  Example :- Apache HTTP server , Microsoft IIS, Nginx, lighttpd, caddy.
+  ~~~
 # Load Balancing
-  - Load balancing is the process of distrubuting incoming network across multiple servers to ensure that no single server is overloaded.Load     balancers can be hardware or software-based and can be used to distribute traffic across web servers,application servers and database         severs.
+  - Load balancing is the process of distrubuting incoming network across multiple servers to ensure that no single server is overloaded.Load balancers can     be hardware or software-based and can be used to distribute traffic across web servers,application servers and database severs.
     Different types of load balancers are as follows:-
     1.Round-robin
     2.Least connection
@@ -440,6 +480,7 @@
 
 # HA
   - HA stands for High Availability, which refers to the ability of a system or application to remain available and operational even in the       event of a failure or outage.
+
 
 
 
