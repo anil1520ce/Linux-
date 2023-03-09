@@ -428,29 +428,35 @@
   enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
           ether e8:9d:87:77:89:2f  txqueuelen 1000  (Ethernet)
   ~~~
-  - http vs https  - http is a simpler protocol that is used for basic web browsing while https is more secure protocol used for transmitting                 ~~~                sensitve data.
+  - http vs https  - http is a simpler protocol that is used for basic web browsing while https is more secure protocol used for transmitting                                   sensitve data.
+  ~~~
   Eg:- http://www.google.com (unsecure)
        https://www.google.com (secure).
   ~~~
+  
   - internal network vs external network  - An internal network is a private network that is isolated from the public internet and can only be                                                         accessed by authorized users within the network. An external network is a public internet, which                                                           is accessible to anyone with an internet connection.
    ~~~
    Eg:- Internal network - Intranet
         External network - Internet.
    ~~~
+   
   - TCP vs UDP     - TCP is a reliable,connection-oriented protocol that is commonly used for applications that require reliable transmission                                    of data. UDP is fast and connectionless protocol that is commonly used for applications that require fast trasmission of                                    data.
   ~~~
   Eg:- TCP - Instagram & Whatsapp
        UDP - Google Meet,Zoom.
   ~~~
+  
   - private subnets vs public subnets - private subnet is reserved for use within an organization and is not accessible from the public                                                             internet. Public subnets is accessible from the public internet and used for resources that need to be                                                     accessible from outside the organization.
   ~~~
   Eg:- Private subnets Instance - 10.0.0.5
        Public subnets Instance  - 198.51.100.1
   ~~~
+  
   - CIDR Range  - CIDR(classless Inter-Domain Routing) range is a method used to allocate and specify the IP address range for networks.
   ~~~
   Eg:- CIDR notation -192.168.0.15/24 
   ~~~
+  
   - Ports       - Port are logical connection points used for the network protocols to identify specific applications or  processes running on                               a computer system. Registered ports for user applications,and dynamic or private ports for client applications.
                   For Example:- Port 20 and 21 are used by FTP(File Transfer Protocol).
                               Port 22 is used for SSH(Secure Shell).
@@ -464,13 +470,15 @@
   ~~~
   Example :- Apache Tomcat server, Microsoft IIS, IBM WebSphere, JBoss EAP,Oracle weblogic.
   ~~~
+  
 # Web Server
-  - A Web server is a software application that run on a computer and serves we content over the internet or an intranet. Its primary function    is to         receive and respond to client requests for web pages or resources, and to send the requested information back to the client.
+  - A Web server is a software application that run on a computer and serves we content over the internet or an intranet. Its primary function    is to receive and respond to client requests for web pages or resources, and to send the requested information back to the client.
   ~~~
   Example :- Apache HTTP server , Microsoft IIS, Nginx, lighttpd, caddy.
   ~~~
+  
 # Load Balancing
-  - Load balancing is the process of distrubuting incoming network across multiple servers to ensure that no single server is overloaded.Load balancers can     be hardware or software-based and can be used to distribute traffic across web servers,application servers and database severs.
+  - Load balancing is the process of distrubuting incoming network across multiple servers to ensure that no single server is overloaded.Load  balancers can be hardware or software-based and can be used to distribute traffic across web servers,application servers and database severs.
     Different types of load balancers are as follows:-
     1.Round-robin
     2.Least connection
@@ -479,7 +487,8 @@
     5.Least response time.
 
 # HA
-  - HA stands for High Availability, which refers to the ability of a system or application to remain available and operational even in the       event of a failure or outage.
+  - HA stands for High Availability, which refers to the ability of a system or application to remain available and operational even in the event of a failure or outage.
+Eg:- HAproxy is a open source load balancer that we can use to distribute HTTP traffic to multiple backened applications,websites or databases to create a highly available system.
 
 
 
