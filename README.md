@@ -489,8 +489,95 @@
 # HA
   - HA stands for High Availability, which refers to the ability of a system or application to remain available and operational even in the event of a failure or outage.
 Eg:- HAproxy is a open source load balancer that we can use to distribute HTTP traffic to multiple backened applications,websites or databases to create a highly available system.
+   
+#  AWS
+####  File trasfering with SSH_SCP
+   
+09-03-2023:-File trasfering with SSH_SCP
+   
+214.  ls
+215.  ls-ltr
+216.  git clone https://github.com/anil1520ce/Linux-.git
+217.  ls
+218.  chmod 400 demo-keypair.pem
+219.  cd..
+220.  cd ..
+221.  cd Downloads
+222.  ls
+223.  mv demo-keypair.pem Anil
+224.  ls
+225.  cd ..
+226.  cd Anil
+227.  ls
+228.  cd ..
+229.  cd Downloads
+230.  ls
+231.  cat Anil
+232.  mv Anil demo-keypair.pem
+233.  ls
+234.  cp demo-keypair.pem /Anil
+235.  cp demo-keypair.pem Anil
+236.  ls
+237.  git clone https://github.com/anil1520ce/Linux-.git
+238.  ls
+239.  rm Anil
+240.  chmod 400 demo-keypair.pem
+241.  ssh -i "demo-keypair.pem" ubuntu@65.0.183.0
+242.  cd ..
+243.  cd Downloads/
+244.  ls
+245.  scp -i demo-keypair.pem -r Linux- ubuntu@65.0.183.0:/home/ubuntu/Demo
+246.  history
+   
+#### 09-03-2023 - File transfer from one Instance to another with Password.
+   
+256.  ssh -i "demo-keypair.pem" ec2@3.108.250.150
+257.  ssh -i "demo-keypair.pem" demo2-ec2@3.108.250.150
+258.  ssh -i "demo-keypair.pem" ec2-user@3.108.250.150
+259.  ssh -i "demo-keypair.pem" ubuntu@65.0.183.0
+260.  ssh -i demo-keypair.pem ubuntu@3.110.49.77
+261.  scp demo-keypair.pem ubuntu@3.110.49.77:/home/ubuntu
+262.  scp -rp linux- ubuntu@3.110.49.77:/home/ubuntu
+263.  scp -rp linux- ubuntu@3.110.49.77:/home/ec2-user
+264.  scp Linux- ubuntu@3.110.49.77:/home/ubuntu
+265.  scp -rp Linux- ubuntu@3.110.49.77:/home/ubuntu
+266.  ssh -i demo-keypair.pem ec2-user@13.232.114.199
+267.  scp demo-keypair.pem ec2-user@13.232.114.199:/home/ec2-user
+268.  scp -rp Linux- ec2-user@13.232.114.199:/home/ec2-user
+269.  history.
 
+   
+#### 10-03-2023 - File trasfering with SSH_SCP
+   
+293.  cd Anil
+294.  ls
+295.  ssh -i "demo-keypair.pem" -r ubuntu@3.85.141.199
+296.  ssh -i "demo-keypair.pem" ubuntu@3.85.141.199
+297.  cd ..
+298.  ls
+299.  cd Anil/
+300.  ssh -i "ddemo-keypair.pem" ubuntu@34.201.143.16
+301.  chmod 400 demo-keypair.pem
+302.  ssh -i "ddemo-keypair.pem" ubuntu@34.201.143.16
+303.  ssh -i "demo-keypair.pem" ubuntu@34.201.143.16
+304.  scp -i demo-keypair.pem demo-keypair.pem ubuntu@34.201.143.16:/home/ubuntu/Demo
+305.  scp -i demo-keypair.pem -r Linux-  ubuntu@34.201.143.16:/home/ubuntu/Demo
+306.  ssh -i "demo-keypair.pem" ubuntu@34.201.143.16
+307.  histroy
+   
+#### 10-03-2023 file transeferd from one instance to another with password.
 
-
-
+313.  ls
+314.  sudo passwd ubuntu
+315.  ssh -i "demo-keypair.pem" ubuntu@100.26.245.70
+316.  scp -rp demo-keypair.pem demo-keypair.pem ubuntu@100.26.245.70
+317.  scp -rp demo-keypair.pem demo-keypair.pem ubuntu@100.26.245.70:/home/ubuntu
+318.  ssh -i "demo-keypair.pem" ubuntu@100.26.245.70
+319.  scp -rp Linux- ubuntu@100.26.245.70:/home/ubuntu/Demo
+320.  ssh -i "demo-keypair.pem" ubuntu@100.26.245.70
+321.  sudo passwd ec2-user
+322.  ssh -i "demo-keypair.pem" ec2-user@35.170.57.112
+323.  scp -rp Linux- ec2-user@35.170.57.112:/home/ubuntu/Demo2
+324.  scp -rp Linux- ec2-user@35.170.57.112:/home/ec2-user/Demo2
+325.  history
 
