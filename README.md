@@ -1,6 +1,6 @@
 # Linux Assignment
 
-# File Managment:
+# 1.File Managment:
 
 
 
@@ -491,7 +491,7 @@
 Eg:- HAproxy is a open source load balancer that we can use to distribute HTTP traffic to multiple backened applications,websites or databases to create a highly available system.
    
 #  AWS
-####  File trasfering with SSH_SCP
+####  File trasfering with SSH & _SCP
    
 09-03-2023:-File trasfering with SSH_SCP
    
@@ -547,7 +547,7 @@ Eg:- HAproxy is a open source load balancer that we can use to distribute HTTP t
 269.  history.
 
    
-#### 10-03-2023 - File trasfering with SSH_SCP
+#### 10-03-2023 - File trasfering with SSH & SCP
    
 293.  cd Anil
 294.  ls
@@ -580,4 +580,43 @@ Eg:- HAproxy is a open source load balancer that we can use to distribute HTTP t
 323.  scp -rp Linux- ec2-user@35.170.57.112:/home/ubuntu/Demo2
 324.  scp -rp Linux- ec2-user@35.170.57.112:/home/ec2-user/Demo2
 325.  history
-
+ 
+# 2. AWS
+- KMS :- KMS stands for Key Managment Service, it is fully managed service provided by AWS that makes it easy for us to create and control the encryption            keys to encrypt out data. KMS is integrated with many other services, including S3,EBS,RDS and Redshift, and it can also be used to encrypt datain          your own applications.
+   
+- security groups :- This groups acts as a virtual firewall that controls inbound and outbound traffic for one or more EC2 instances or other AWS                                resources. Security groups allow you to define rules that specify which traffic is allowed to reach your resources, and which traffic                      is blocked.
+ 
+- SSH Keys :- SSH Keys are a way of securly  authenticating access to remote servers are systems.SSH stands for Secure Shell, which is a protocol that                   allow for secure remote access to a server or a system over an unsecured network. SSh keys are a type of public-key cryptography that allows               you to authenticate to remote system without needing to enter a password. 
+   
+- EC2 Instance :- EC2 (Elastic compute cloud) instance is a virtual server in the AWS cloud that allows you to run applications and services in a highly                     scalable and flexible manner.With EC2 ,we can quickly provision new instance, configure them to meet your specific requirements, and                       scale them up or down as needed to meet changes in demand.
+   
+- Instance types :- EC2 instances come in a variety of types that are optimized for different work loads and use cases. Each instance type has a unique                         combination of CPU, memory, storage and network resources, which makes it suited to different types of applications and workloads. 
+             Example:- t2 nano , t2 micro, t3 micro ....
+   
+- Volumes :- Volumes refers to the storage devices that can be attached to EC2 instances.Volumes can be used to store data,install software, or server as a              backup solutions. There are two main types of volumes in AWS.
+             1. EBS volume - Elastic Block store volumes.
+             2. Instance store volumes.
+   
+- AMI's  :- Amazon Machine Images are pre-configured virtual machines images used to create EC2 instances. An AMI contains all the information needed to               launch an instance, including the operating system, and any necessary configurations.with AMI's we can quickly deploy multiple instances with               the same configuration. or launch instance in different locations with the same configuration or launch instance in differenct regions with the             same configuration.
+   
+- Snapshots  :- A Snapshot is a point-in-time copy of Amazon Elastic Block store (EBS) volume.Snapshots can be used to create a backup of the data on the                   volume, to migrate the volume to a different region, or to create new EBS volume with the same data as a original volume. 
+         
+- Instance ID :- An Instance ID is a unqiue identifier for an EC2 instance. When we launch an EC2 instance , AWS assigns a unique ID to that instance .The                  instance ID is a string of characters.
+                 Example :- i-0998d39aeb8546670
+  
+- Instance state :- Instance state refers to the current status of an Amazon Elastic compute cloud (EC2) instance. The instance state can be one of the                         following.
+                    1. Running
+                    2. Stopped
+                    3. Terminated
+                    4. shutting down
+                    5. Pending
+                    6. Stopping
+                    7. Rebooting.
+   
+ - Status Check :- A status check refers to a health check that is performed on an EC2 instance to determine whether it is functioning properly. There are                    two types of status checks that are performed on an EC2 instance.
+                   1. System status check 
+                   2. Instance status check.
+  
+ - Availability zone :- An availability zone is a data center that is located in a specific geographic region and is isolated from other data centers                               within the same region. Each availability zone has its own power source, networking, and connectivity to the internet. By isolating                         data centers, AWS can offer high levels of availability and fault tolerance.
+                        Example :- ap-south -1 (Asia pacific -mumbai), us-east-2 (US East ohio).
+   
